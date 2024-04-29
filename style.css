@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+   
+    background-color: aliceblue;
+    border-bottom: 4px solid #fdb347;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #logo{
+    height:100px;
+  }
+  #image {
+    height: 500px;
+    
+    margin-left:350px;
+    align-items: center;
+  }
+  figcaption {
+    margin-left:550px;
+    font-size:large;
+  }
+  

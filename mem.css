@@ -1,0 +1,157 @@
+iframe{
+  margin-top:16%;
+  width:200px;
+  height:200px;
+}
+#text {
+  
+  margin-left: 20%;
+  margin-top:5%;
+  width: 500px;
+}
+
+footer {
+  flex-direction:row;
+  display:flex;
+  
+  background-color: red;
+  
+  height:300px;
+}
+.text1 {
+  
+ color:burlywood;
+ font-weight:bold;
+ text-align:left;
+}
+.text2 {
+  color:white;
+  text-align:left;
+
+}
+#logo {
+  width:100px;
+
+}
+* {
+  box-sizing: border-box;
+}
+body{
+	font-family:Verdana;
+	
+}
+h1 {
+  font-size: 25px;
+  font-family:sans-serif ;
+  color:burlywood;
+}
+#box{
+  background-image: url('https://image.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148417584.jpg');
+	display: grid;
+	grid-template-areas: 
+    ' header header' 
+	 ' nav nav' 
+    'left   right'
+	 'footer   footer' ;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+#header{
+	grid-area: header;
+	background:linear-gradient(burlywood, rgb(162, 27, 27));;
+	padding:15px;
+	text-align:center;
+}
+footer{
+	grid-area: footer;
+	background-color:red;
+	text-align:center;
+	padding:10px;margin-top:7px;
+}
+/*
+#contents{
+   display: grid;
+  grid-template-areas: 
+    ' header header' 
+    'left   right' 
+   
+}
+*/
+.menu {
+ grid-area: nav;
+  background-color:rgb(162, 27, 27);
+  text-align:center;
+}
+
+.menu li{
+	 display: inline-block;/* display in one line*/
+     list-style-type: none;/* no dots*/
+          
+	
+}
+
+.menu a:link {
+  font-weight: bold;
+  padding:30px;
+ font-size:22px;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+  color:white;
+}
+.menu a:hover{
+	color: #80690D;
+}
+.menu a:visited{
+	color: green;
+}
+.main {
+ grid-area: left;
+ 
+  padding:0 20px;
+}
+.right {
+	grid-area: right;
+  background-color:burlywood;
+ 
+ 
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+.main > figure{
+	float: right;
+	
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+ #box{
+    grid-template-areas: 
+      'header' 
+	  'nav'
+      'left'     
+      'right' 
+	  'footer';
+   
+  }
+  
+  .menu li{
+	  display: block;
+	  
+  }
+
+}
+a {
+  text-decoration:none;
+}
+#food {
+
+width: 800px;
+height:800px;
+
+}
+button {
+  margin-left: 50%;
+ 
+}
